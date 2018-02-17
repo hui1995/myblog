@@ -20,5 +20,7 @@ import myApp
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^blog/',include('myApp.urls'))
+    url(r'^',include('myApp.urls',namespace='myApp')),
+url(r'^comment/', include('comments.urls',namespace='comments')),
+    # url(r'^comments/',include('comments.urls',namespace='comments'))
 ]
