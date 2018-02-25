@@ -52,6 +52,36 @@
 			
 			
 		}
+		#searchform{
+				height: 50px;
+
+
+
+
+			width: 280px;
+
+
+		}
+
+		.input_search{
+
+			width: 200px;
+			height: 40px;
+			margin-top: 10px;
+			margin-left: 10px;
+		}
+		.go_search{
+			width: 40px;
+			height: 40px;
+			background-color: #737a8a;
+			color: #ffffff;
+			border: none;
+			font-weight: normal;
+			font-size: 16px;
+
+
+
+		}
 		.notice{
 				margin-top: 30px;
 
@@ -87,6 +117,8 @@
 			height: 50px;
 			overflow: hidden;
 				color: #ffffff;
+			position: fixed;
+
 				
 		
 
@@ -112,6 +144,7 @@
 			height: 50px;
 			width: 600px;
 			margin-left: 550px;
+
 		
 				
 
@@ -313,4 +346,7 @@
 	}
 	.text{
 		line-height: 40px;
+	}
+	.title{
+		font-size: 38px;
 	}

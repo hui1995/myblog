@@ -8,6 +8,9 @@
 	<title>以黑为白</title>
 	<link rel="stylesheet" type="text/css" href="{% static 'blog/css/reset.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'blog/css/common.css' %}">
+     <script src="{% static 'blog/js/jquery-2.1.3.min.js' %}"></script>
+         <script src="{% static 'blog/js/common.js' %}"></script>
+
 
 
 </head>
@@ -21,7 +24,7 @@
 		</div>
 
 
-	<div class="header_top">
+	<div class="header_top" id="header_top">
 		<div class="logo">
 				<a href="{% url 'blog:index' %}">以黑为白</a>
 		</div>
@@ -52,8 +55,9 @@
 
 			<div class="search">
 				<form role="search" method="get" id="searchform" action="{% url 'blog:search' %}">
-                            <input type="search" placeholder="搜索" required>
-                            <button type="submit"><span class="ion-ios-search-strong"></span></button>
+                            <input class="input_search" type="search" placeholder="Search..." required>
+
+                            <input type="submit" value="GO" class="go_search"></input>
                         </form>
 			</div>
 			<div class="notice">
